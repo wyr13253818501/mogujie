@@ -1,0 +1,267 @@
+
+@import "main.scss";
+#cart {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  @include flexBox;
+  @include flex-direction(column);
+  margin: 0 auto;
+  &::-webkit-scrollbar {display: none}
+
+  .banner {
+    width: 100%;
+    height: 37px;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    .header {
+      height: 37px;
+      width: 100%;
+
+      @include flexBox;
+      .icn {
+        width: 38px;
+        height: 37px;
+        text-align: center;
+        .iconfont {
+          font-style: normal;
+          line-height: 37px;
+          font-size: 16px;
+        }
+
+      }
+      .head-title {
+        width: 222px;
+        height: 37px;
+        color: #5e5e5e;
+        text-align: center;
+        line-height: 37px;
+        font-size: 20px;
+        font-weight: 800;
+
+      }
+      .head-right {
+        width: 60px;
+        height: 37px;
+        text-align: center;
+        line-height: 37px;
+      }
+    }
+
+  }
+
+  #content {
+    @include flex(1);
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    position: relative;
+    &::-webkit-scrollbar {display: none}
+    .c-box{
+      width:100%;
+      height: 182px;
+
+      margin-top: 80px;
+      .i-box{
+        width:108px;
+        height:108px;
+        margin: 0 auto;
+        background: #ddd5d7;
+        border-radius: 50%;
+        text-align: center;
+        .iconfont{
+          font-style: normal;
+          line-height: 108px;
+          font-size: 30px;
+          color: #fff;
+        }
+      }
+
+    }
+    .d-box{
+      width:100%;
+      height: 22px;
+
+      margin-top: 10px;
+      text-align: center;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+
+    .x-box{
+      width:100%;
+      height: 36px;
+      .e-box{
+        width:85px;
+        height: 36px;
+        background: #ff5777;
+        margin: 0 auto;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        line-height: 36px;
+        font-size: 16px;
+      }
+    }
+  }
+
+
+ .bao {
+    width:100%;
+    margin-bottom: 50px;
+   .content-box {
+     width: 100%;
+     height: 150px;
+
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border-bottom: 1px solid #d8d8d8;
+     border-top: 1px solid #d8d8d8;
+     .shop-title {
+       width: 100%;
+       height: 32px;
+       border-bottom: 1px solid #d8d8d8;
+       .shopcheckbox {
+         border: none;
+         margin-left: 10px;
+         display: block;
+         float: left;
+         margin-top: 10px;
+
+       }
+       .check-box {
+         width: 60px;
+         height: 14px;
+         float: left;
+         margin-top: 9px;
+         line-height: 14px;
+         margin-left: 6px;
+       }
+     }
+
+     .big-box {
+       width: 100%;
+       height: 108px;
+       .tox {
+         width: 302px;
+         height: 85px;
+
+         margin: 10px;
+         position: relative;
+         .shop-checkbox1 {
+           display: block;
+           width: 17px;
+           height: 17px;
+           float: left;
+           border: none;
+           position: absolute;
+           top: 30%;
+
+         }
+         .img-box {
+           width: 61px;
+           height: 81px;
+           position: absolute;
+           left: 30px;
+           float: left;
+           img {
+             display: inline-block;
+             width: 61px;
+             height: 81px;
+           }
+         }
+         .text-box {
+           width: 196px;
+           height: 81px;
+
+           float: right;
+           .title-box {
+             width: 196px;
+             height: 71px;
+
+             .title1 {
+               width: 100%;
+             }
+             .good-desc {
+               width: 100%;
+               height: 34px;
+             }
+             .title-span {
+               width: 100%;
+               height: 15px;
+
+               .cgood-price {
+                 display: block;
+                 float: left;
+               }
+               .cgood-origin {
+                 display: block;
+                 float: left;
+               }
+               .cgood-count {
+                 display: block;
+                 float: right;
+               }
+
+               .ji {
+                 width: 100%;
+                 height: 15px;
+                 margin-left: 6px;
+
+                 float: left;
+                 .tian {
+                   width: 25px;
+                   height: 15px;
+                   border: 0;
+                   float: left;
+                   text-align: center;
+                 }
+                 .jian {
+                   display: block;
+                   width: 15px;
+                   float: left;
+                   text-align: center;
+
+                 }
+                 .jia {
+                   display: block;
+                   width: 15px;
+                   float: left;
+                   text-align: center;
+                 }
+                 .cgood {
+                   display: block;
+                   float: left;
+                   margin-left: 5px;
+                 }
+               }
+
+             }
+           }
+         }
+
+       }
+       .he {
+         width: 100%;
+         height: 15px;
+       }
+
+     }
+
+   }
+
+   .dai{
+     float: left;
+   }
+   .jie{
+     float: right;
+   }
+
+ }
+  .bao:after{content:".";clear:both;display:block;height:0;overflow:hidden;  visibility:hidden;}
+}
+
+

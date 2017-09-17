@@ -1,0 +1,170 @@
+
+
+@import "main.scss";
+#My{
+  width:100%;
+  height:100%;
+  overflow-x:hidden;
+  @include flexBox;
+  @include flex-direction(column);
+  margin: 0 auto;
+  &::-webkit-scrollbar {display:none}
+  .my-box{
+    width:100%;
+    height:50px;
+
+    margin-top: 60px;
+    .h-box{
+      width:100%;
+      height: 20px;
+     font-size: 16px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .bttn{
+      display: block;
+      border: 0;
+      width: 100%;
+      height: 30px;
+      box-sizing: border-box;
+    }
+
+  }
+  .banner {
+    width: 100%;
+    height: 37px;
+    background: #fff;
+    border-bottom:1px solid #e5e5e5 ;
+    .header {
+      height: 37px;
+      width: 100%;
+
+      @include flexBox;
+      .icn{
+        width:38px;
+        height:37px;
+        text-align: center;
+        .iconfont{
+          font-style: normal;
+          line-height: 37px;
+          font-size: 16px;
+        }
+
+      }
+      .head-title{
+        width:222px;
+        height: 37px;
+        color: #5e5e5e;
+        text-align: center;
+        line-height: 37px;
+        font-size: 20px;
+        font-weight: 800;
+      }
+      .head-right{
+        width:60px;
+        height: 37px;
+        text-align: center;
+        line-height: 37px;
+      }
+    }
+
+  }
+
+  #content{
+    @include flex(1);
+    width: 100%;
+    height: 100%;
+    background:#fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {display: none  }
+    #content-box{
+      width:294px;
+      height:100%;
+      margin: 0 auto;
+      input:focus{border:1px solid red; }
+      .ipt-box{
+        width:294px;
+        height: 55px;
+        margin-top: 30px;
+        .userinput-title{
+          text-align: center;
+          font-size: 14px;
+          line-height: 12px;
+          margin-bottom: 10px;
+        }
+
+        .userinput-input{
+          display: block;
+          width:100%;
+          height: 28px;
+          margin: 0 auto;
+          text-align: center;
+          border: 0;
+          border-bottom: 1px solid #ededed;
+          color: #ededed;
+          margin-bottom: 10px;
+          font-size: 20px;
+        }
+
+      }
+      .ipt-box1{
+        width:294px;
+        height: 55px;
+        margin-top: 30px;
+        .userinput-title{
+          text-align: center;
+          font-size: 14px;
+          line-height: 12px;
+          margin-bottom: 10px;
+        }
+        .userinput-input{
+          display: block;
+          width:100%;
+          height: 28px;
+          margin: 0 auto;
+          text-align: center;
+          border: 0;
+          border-bottom: 1px solid #ededed;
+          color: #ededed;
+          margin-bottom: 10px;
+          font-size: 20px;
+        }
+      }
+      .confirm_button{
+        width:100%;
+        height: 46px;
+        text-align: center;
+        line-height: 46px;
+        background: rgb(255, 24, 119);
+        display: inline-block;
+        border: 0;
+        border-radius: 3px;
+        margin-top: 15px;
+        font-size: 16px;
+      }
+
+    }
+    .ipt-box2{
+      width:100%;
+      height: 20px;
+      margin-top: 10px;
+
+      .ipt-p1{
+        display: block;
+        line-height:20px ;
+        float: left;
+      }
+      .ipt-p2{
+        display: block;
+        line-height:20px ;
+        float:right;
+      }
+    }
+
+
+
+  }
+
+
+}

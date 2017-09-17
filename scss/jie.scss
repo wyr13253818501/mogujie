@@ -1,0 +1,280 @@
+
+@import "main.scss";
+
+#jie{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  @include flexBox;
+  @include flex-direction(column);
+  margin: 0 auto;
+  &::-webkit-scrollbar {
+    display: none
+  }
+  position: relative;
+  .banner {
+    width: 100%;
+    height: 37px;
+    background: #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    .header {
+      height: 37px;
+      width: 100%;
+
+      @include flexBox;
+      .icn {
+        width: 38px;
+        height: 37px;
+        text-align: center;
+        .iconfont {
+          font-style: normal;
+          line-height: 37px;
+          font-size: 16px;
+        }
+
+      }
+      .head-title {
+        width: 222px;
+        height: 37px;
+        color: #5e5e5e;
+        text-align: center;
+        line-height: 37px;
+        font-size: 20px;
+        font-weight: 800;
+
+      }
+
+      .head-right {
+        width: 60px;
+        height: 37px;
+        text-align: center;
+        line-height: 37px;
+          .iconfont{
+            font-style: normal;
+            font-size:18px;
+          }
+      }
+    }
+
+  }
+
+
+  #content {
+    @include flex(1);
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none
+    }
+
+    .tianxie{
+      width:100%;
+      height:42px;
+      background: #fff;
+      margin-top: 30px;
+      text-align: center;
+      line-height: 42px;
+      color: #333;
+    }
+
+
+    .content-box{
+      width:100%;
+
+
+      margin-top: 10px;
+      .box-img{
+        width:100%;
+        height: 108px;
+        .ab{
+          width:100%;
+          height: 108px;
+
+          .ab-box{
+            width:92%;
+            height: 87px;
+
+            margin:0 auto;
+            .ab-left{
+              width:62px;
+              height: 87px;
+              float: left;
+              img{
+                display: inline-block;
+                width:62px;
+                height: 87px
+              }
+            }
+            .ab-center{
+                width:195px;
+               height: 87px;
+
+              float: left;
+              margin: 0 5px;
+              .center-shang{
+                width:100%;
+                height: 48%;
+              }
+              .center-xia{
+                width:100%;
+                height: 48%;
+              }
+
+            }
+            .ab-right{
+              width:25px;
+              height:87px;
+
+              float: right;
+              .skuItem-price--old{
+                display: block;
+                clear: both;
+              }
+              .skuItem-price--now{
+                display: block;
+                clear: both;
+              }
+            }
+
+          }
+        }
+      }
+      .saleber{
+        width:100%;
+        height:44px;
+        //background: red;
+        .salebar-title{
+          display: block;
+          width:60px;
+          height:44px;
+          line-height: 44px;
+          float: left;
+          margin-left: 10px;
+        }
+
+        .salebar-price{
+          display: block;
+          float: right;
+          line-height: 44px;
+          margin-right: 10px;
+        }
+      }
+
+    }
+
+    .footer{
+      width:100%;
+      height: 40px;
+      //background: #6e6568;
+    }
+
+
+  }
+
+  .shou{
+    width:90%;
+    height: 182px;
+    margin: 0 auto;
+    position: absolute;
+    top:30%;
+    left:5%;
+    background: #fff;
+    display: none;
+    z-index: 9999;
+    .s-box1{
+      width: 100%;
+      height: 33px;
+      background: #fff;
+      text-align: center;
+      line-height: 33px;
+      color: #5e5e5e;
+
+    }
+    .cha{
+      width:10px;
+      height: 10px;
+      position: absolute;
+      right: 0;
+      top:0;
+    }
+
+    .brick-box1{
+      width:100%;
+      height: 32px;
+      background:#fff;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5 ;
+      .ipt1{
+        width: 49%;
+        height: 30px;
+        float: left;
+        border: none;
+        border-right: 1px solid #e5e5e5;
+
+      }
+      .ipt2{
+        width: 50%;
+        height: 30px;
+        float: right;
+        border: none;
+      }
+
+    }
+    .brick-box2{
+      width:100%;
+      height: 32px;
+      background:#fff;
+      border-bottom: 1px solid #e5e5e5 ;
+      .a-box{
+        //width:33%;
+        height: 32px;
+        border-right:1px solid #e5e5e5 ;
+        float: left;
+        .addresss{
+          display: inline-block;
+          outline:none;
+          height: 32px;
+          border:0;
+        }
+      }
+
+    }
+    .brick-box3{
+      width:100%;
+      height: 50px;
+      border-bottom: 1px solid #e5e5e5 ;
+      .t-data{
+        display: inline-block;
+        width:100%;
+        height: 100%;
+        border: 0;
+        box-sizing: border-box;
+      }
+    }
+    .brick-box4{
+      width:100%;
+      text-align: center;
+      line-height: 30px;
+      color: #FF5577;
+    }
+
+
+
+  }
+
+
+  .zhezhao{
+    z-index: 99;
+    width:100%;
+    height:100%;
+    background: #0f0f0f;
+    opacity: .7;
+    position: absolute;
+    display: none;
+  }
+
+
+}

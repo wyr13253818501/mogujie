@@ -1,0 +1,125 @@
+
+@import "main.scss";
+
+#register{
+  width:100%;
+  height:100%;
+  overflow-x:hidden;
+  @include flexBox;
+  @include flex-direction(column);
+  margin: 0 auto;
+  .banner {
+    width: 100%;
+    height: 37px;
+    background: #fafafa;
+    border-bottom:1px solid #e5e5e5 ;
+    .header {
+      height: 37px;
+      width: 100%;
+      @include flexBox;
+      .icn{
+        width:38px;
+        height:37px;
+        text-align: center;
+        .iconfont{
+          font-style: normal;
+          line-height: 37px;
+          font-size: 16px;
+        }
+
+      }
+      .head-title{
+        width:222px;
+        height: 37px;
+        color: #5e5e5e;
+        text-align: center;
+        line-height: 37px;
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+    }
+
+
+  }
+
+  #content{
+    @include flex(1);
+    width: 100%;
+    height: 100%;
+    background:#fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {display: none  }
+
+    .ipt-box{
+      width:294px;
+      height: 200px;
+      margin: 0 auto;
+      .ipt-box1{
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        .userinput-input{
+          display: block;
+          width:100%;
+          height: 28px;
+          margin-top:10px;
+          text-align: center;
+          color: #ededed;
+          margin-bottom: 10px;
+
+        }
+      }
+      .ipt-box2{
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        .userinput-input{
+          display: block;
+          width:100%;
+          height: 28px;
+          margin-top:10px;
+          text-align: center;
+          color: #ededed;
+          margin-bottom: 10px;
+
+        }
+      }
+      .ipt-box3{
+        width:298px;
+        height:42px;
+        background:#ff1877;
+        margin-top: 10px;
+        border-radius: 3px;
+
+        .ipt-p2{
+          display: block;
+          line-height:42px ;
+          text-align: center;
+
+        }
+      }
+
+    }
+
+
+  }
+
+
+  #toast{
+    position: absolute;
+    bottom:100px;
+    width: 60%;
+    left:20%;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px;
+    display: none;
+  }
+
+
+}

@@ -1,0 +1,111 @@
+@import "main.scss";
+
+#searchlist{
+  width:100%;
+  height:100%;
+  .mb{
+    @include flexBox;
+    @include flex-direction('column');
+    width:100%;
+    height:38px;
+    border-bottom:1px solid #e5e5e5 ;
+
+    position: relative;
+    .iconfont{width:7%;font-style: normal;font-size: 18px;
+      position: absolute;left:10px;top:10px;color: #666;
+
+    }
+
+    .mbForm{
+      @include flexBox;
+      @include flex-direction('column');
+      width:284px;
+      position:absolute;left:10%;top:24%;
+      box-sizing: border-box;
+      input:focus{ border:1px solid red; }
+      .mbinput{
+
+        width: 251px;
+        height:21px;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        font-size: .28rem;
+
+      }
+
+    }
+
+
+  }
+
+  #content {
+    @include flex(1);
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    &::-webkit-scrollbar {
+      display: none
+    }
+    #box4 {
+      width: 100%;
+      background: #F6F6F6;
+      margin-bottom: 50px;
+      .box5 {
+        display: block;
+        width: 47%;
+        height: 264px;
+        background: #fff;
+        margin: 2% 0 0 2%;
+        overflow: hidden;
+        border-radius: 5px;
+        float: left;
+        .goods {
+          width: 150px;
+          height: 197px;
+          img {
+            display: inline-block;
+            width: 100%;
+            height: 200px
+          }
+        }
+        .name {
+          width: 100%;
+          height: 38px;
+          margin: 0 auto;
+          margin-top: 4px;
+          .tag {
+            display: block;
+            font-size: 10px;
+            background: #eff3f6;
+            color: #5a6f7a;
+            float: left;
+          }
+        }
+
+        .bot {
+          width: 135px;
+          height: 20px;
+          line-height: 20px;
+          .price1 {
+            display: block;
+            color: #333;
+            float: left
+          }
+          .price2 {
+            display: block;
+            color: #999;
+            float: right;
+          }
+        }
+      }
+
+    }
+
+    #box4:after{content:".";clear:both;display:block;height:0;overflow:hidden;  visibility:hidden;}
+  }
+
+
+}

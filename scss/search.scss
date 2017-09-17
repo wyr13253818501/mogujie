@@ -1,0 +1,125 @@
+
+@import "main.scss";
+
+.mb{
+  @include flexBox;
+  @include flex-direction('column');
+  width:100%;
+  height:38px;
+  border-bottom:1px solid #e5e5e5 ;
+
+  position: relative;
+  .iconfont{width:7%;font-style: normal;font-size: 18px;
+    position: absolute;left:10px;top:10px;color: #666;
+
+  }
+
+  .mbForm{
+    @include flexBox;
+    @include flex-direction('column');
+    width:284px;
+    position:absolute;left:10%;top:24%;
+    box-sizing: border-box;
+    input:focus{ border:1px solid red; }
+    .mbinput{
+
+      width: 251px;
+      height:21px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: .28rem;
+
+    }
+
+    .nma{
+      display: block;
+      position: absolute;
+      right: 0;
+      width:30px;
+      height:20px;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+
+
+}
+
+
+.content{
+  .lishi{
+    width:100%;
+    height:70px;
+
+    .li-box1{
+      width:90%;
+      height: 18px;
+      margin:0 auto;
+      .li-p1{
+        display: block;
+        float: left;
+      }
+      .li-p2{
+        display: block;
+        float:right;
+      }
+    }
+
+    .li-box2{
+      width:100%;
+      height:50px;
+
+      .ul-box{
+        width:90%;
+        height:50px;
+        margin: 0 auto;
+        li{
+          float: left;
+        }
+
+      }
+    }
+
+  }
+
+
+
+  .re{
+    @include flexBox;
+    @include flex-direction('column');
+    width:100%;
+
+    #proList{
+
+      width:90%;
+      margin-top: 10px;
+      li{
+        display: inline-block;
+        float: left;
+        width:60px;
+        height:20px;
+        border:1px solid #f5f5f5;
+        border-radius: 5px;
+        text-align: center;
+        margin: 5px;
+        line-height: 20px;
+        color: #666;
+      }
+      li:nth-of-type(2){
+        color: red;
+      }
+      li:nth-of-type(6){
+        color: red;
+      }
+      li:nth-of-type(8){
+        color: red;
+      }
+      li:nth-of-type(10){
+        color: red;
+      }
+    }
+  }
+
+
+
+}
